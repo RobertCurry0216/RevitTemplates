@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <!-- <AddIn Type="Command">
+    <Text>Command $projectname$</Text>
+    <Description>Some description for $projectname$</Description>
+    <Assembly>$projectname$.dll</Assembly>
+    <FullClassName>$safeprojectname$.Commands.RevitAddinTemplateCmd</FullClassName>
+    <ClientId>$guid1$</ClientId>
+    <VendorId>com.TTW.Advance</VendorId>
+    <VendorDescription>TTW Advance, www.ttw.com.au</VendorDescription>
+  </AddIn> -->
+  <AddIn Type="Application">
+    <Name>Application $projectname$</Name>
+    <Assembly>$projectname$.dll</Assembly>
+    <FullClassName>$safeprojectname$.App.App</FullClassName>
+    <ClientId>$guid2$</ClientId>
+    <VendorId>com.TTW.Advance</VendorId>
+    <VendorDescription>TTW Advance, www.ttw.com.au</VendorDescription>
+  </AddIn>
+</RevitAddIns>

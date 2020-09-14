@@ -1,0 +1,45 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>RevitAddin</Name>
+    <Description>Starting template for a revit addin. Handles creating tabs, panels, stacked buttons, and pulldown buttons</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <LanguageTag>C#</LanguageTag>
+    <PlatformTag>Windows</PlatformTag>
+    <ProjectTypeTag>Revit</ProjectTypeTag>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>RevitAddin</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="TempAddin.csproj" File="TempAddin.csproj" ReplaceParameters="true">
+      <Folder Name="App" TargetFolderName="App">
+        <ProjectItem ReplaceParameters="true" TargetFileName="App.cs">App.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AppLayout.cs">AppLayout.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ButtonDefinitions.cs">ButtonDefinitions.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Commands" TargetFolderName="Commands">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ExampleCmd.cs">ExampleCmd.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Helpers" TargetFolderName="Helpers">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AllowAllSelectionFilter.cs">AllowAllSelectionFilter.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AlwaysOnAvailability.cs">AlwaysOnAvailability.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Constants.cs">Constants.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Models" TargetFolderName="Models" />
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Resources" TargetFolderName="Resources">
+        <ProjectItem ReplaceParameters="false" TargetFileName="icon.png">icon.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="icon_small.png">icon_small.png</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$projectname$.addin">TempAddin.addin</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
